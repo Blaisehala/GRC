@@ -161,6 +161,41 @@
             font-weight: bold;
         }
         
+
+         .visitor-bubble {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8555 100%);
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            cursor: pointer;
+            z-index: 1000;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        
+        .visitor-bubble:hover {
+            transform: scale(1.1);
+        }
+        
+        .visitor-number {
+            font-size: 1.8em;
+            line-height: 1;
+        }
+        
+        .visitor-label {
+            font-size: 0.7em;
+            margin-top: 3px;
+            opacity: 0.9;
+        }
         @media (max-width: 768px) {
             .hero {
                 height: 400px;
@@ -194,7 +229,8 @@
         <div class="hero">
             <div class="hero-content">
                 <h1>When the Firewall Falls: </h1>
-                <p>Raila Odinga, GRC and the Fragile Code of Leadership</p>
+                <p>Understanding IT GRC in Raila Odinga’s Fragile Code of Leadership
+</p>
                 <span class="odm-badge">ODM Party</span>
             </div>
         </div>
@@ -206,6 +242,15 @@
                 <p>When I heard of <strong>Tinga Baba wuod Nyalego’s</strong> passing, it hit me not just as a Kenyan,  but as someone who works in IT Governance, Risk, and Compliance (GRC) every day. <a href="https://www.ibm.com/think/topics/grc" target="_blank">GRC  frameworks  in Information security, Cybersecurity and IT</a> protect organizations from collapse.</p>
                 <p>But this week, as Kenya mourns  I  saw those same principles reflected in a man’s life, not just in a policy, or just as IT buzzwords but as pillars of human leadership.</p>
                 <p>For decades, Odinga was more than a politician. He was a <strong>system administrator of democracy,</strong> constantly patching vulnerabilities, updating institutions, and enforcing the protocols that kept Kenya’s democratic engine running. In many ways, his life reads like a case study in national GRC.</p>
+           <img src="data:image/jpeg;base64,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" width="" alt="">
+           
             </div>
 
 
@@ -252,17 +297,39 @@
                 <p>That’s the question every nation, and every organization, must answer. Because in governance, as in cybersecurity, true resilience isn’t about preventing change  it’s about surviving it.</p>
             </div>
 
+             <div class="stats1">
+                <p><strong>In the end, Baba lived GRC before it was an acronym.</strong>
+He governed with vision, managed risk with courage, and complied with the deepest rules of integrity.
+And in his passing, he leaves behind not just a nation in mourning, but a framework for how leadership, like a well-secured network, must endure beyond the leader. <i><strong>Jowii! Jowii! Jowii!</strong></i>
+</p>
+               
+            </div>
 
-            <div class="stats">
-                <div class="stats-label">✨ Visitors to this page</div>
-                <div class="visitor-counter" id="counter">0</div>
-                <div class="stats-label">Since launch</div>
+<br>
+         
+        <hr>
+      
+
+
+    </div>
+
+    <div class="author-section">
+            <div class="author-content">
+                <div class="author-avatar">👤<i><a href="">Blaise Hala</a> works at the intersection of cybersecurity and leadership, exploring how trust, structure, and resilience shape both systems and societies.</i></div>
+                <div class="author-info">
+                    
+                </div>
             </div>
         </div>
-        
+
+      
         <footer>
-            <p>&copy; 2025 Raila Odinga - ODM. United for Change. | Last updated: <span id="date"></span></p>
+            <p>&copy; 2025 Raila Odinga | Last updated: <span id="date"></span> | <a href="">About</a></p>
         </footer>
+
+     <div class="visitor-bubble" title="Page visitors">
+        <div class="visitor-number" id="bubble-counter">0</div>
+        <div class="visitor-label">Visitors</div>
     </div>
     
     <script>
@@ -270,7 +337,7 @@
             let visits = localStorage.getItem('raila_visits') || 0;
             visits = parseInt(visits) + 1;
             localStorage.setItem('raila_visits', visits);
-            document.getElementById('counter').textContent = visits;
+            document.getElementById('bubble-counter').textContent = visits;
         }
         
         function updateDate() {
