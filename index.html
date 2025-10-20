@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raila Odinga - ODM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        
+        .hero {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBWPDWAWyxFNcOwopDnv9wohHXnDkDhcuAvOzWs21IM8LINN-DdIKnlEjiWhXLrwSLSms48i6Fg0wQ-NdZobnhnar2U_rfRDxoq2qrtukUw');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 700px;
+            padding: 40px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+            margin-bottom: 15px;
+        }
+        
+        .odm-badge {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-shadow: none;
+        }
+        
+        .content {
+            padding: 50px;
+            background: white;
+        }
+        
+        .section-title {
+            color: #1a472a;
+            margin-bottom: 25px;
+            font-size: 2em;
+            border-left: 5px solid #ff6b35;
+            padding-left: 20px;
+        }
+        
+        .about-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .about-text p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1em;
+        }
+        
+        .quote {
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            border-left: 5px solid #ff6b35;
+            margin: 40px 0;
+            font-size: 1.2em;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .stats {
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8555 100%);
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 40px;
+            color: white;
+            text-align: center;
+        }
+        
+        .visitor-counter {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .stats-label {
+            font-size: 1em;
+            opacity: 0.95;
+        }
+        
+        footer {
+            background: #1a472a;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            font-size: 0.9em;
+            border-top: 3px solid #ff6b35;
+        }
+        
+        .odm-accent {
+            color: #ff6b35;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                height: 400px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .content {
+                padding: 30px;
+            }
+            
+            .about-text {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .section-title {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>When the Firewall Falls: </h1>
+                <p>Raila Odinga, GRC and the Fragile Code of Leadership</p>
+                <span class="odm-badge">ODM Party</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">About <span class="odm-accent">Raila</span></h2>
+            
+            <div class="about-text">
+                <p>Raila Amolo Odinga stands as one of East Africa's most influential political leaders and a champion of democratic values. His unwavering commitment to constitutional governance and social justice has shaped Kenya's political narrative for decades.</p>
+                <p>As the leader of the Orange Democratic Movement (ODM), Raila has mobilized millions across the nation, advocating for transparent institutions, inclusive development, and the rights of ordinary Kenyans.</p>
+            </div>
+            
+            <div class="quote">
+                "The future of our nation depends on our commitment to democracy, accountability, and the welfare of all citizens."
+            </div>
+            
+            <div class="about-text">
+                <p>Raila's political journey has been marked by principled stands against authoritarian tendencies and his relentless push for constitutional reforms. His efforts contributed significantly to Kenya's 2010 constitution.</p>
+                <p>Today, Raila continues to be a voice for change, advocating for good governance, poverty alleviation, and the empowerment of Kenya's youth as the nation progresses toward a more inclusive future.</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stats-label">✨ Visitors to this page</div>
+                <div class="visitor-counter" id="counter">0</div>
+                <div class="stats-label">Since launch</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Raila Odinga - ODM. United for Change. | Last updated: <span id="date"></span></p>
+        </footer>
+    </div>
+    
+    <script>
+        function initCounter() {
+            let visits = localStorage.getItem('raila_visits') || 0;
+            visits = parseInt(visits) + 1;
+            localStorage.setItem('raila_visits', visits);
+            document.getElementById('counter').textContent = visits;
+        }
+        
+        function updateDate() {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const today = new Date().toLocaleDateString('en-US', options);
+            document.getElementById('date').textContent = today;
+        }
+        
+        window.addEventListener('load', function() {
+            initCounter();
+            updateDate();
+        });
+    </script>
+</body>
+</html>
